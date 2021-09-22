@@ -1,5 +1,7 @@
 # September Coding Tasks
 
+A set of tasks for NDA company.
+
 ## Tasks description
 
 1. Write a function that takes an Integer and returns it as a string with the correct ordinal indicator suffix (in English). 
