@@ -11,4 +11,4 @@ test: build
 
 check:
 	cargo check
-	cargo clippy --all-targets --all-features -- -D warnings
+	cargo clippy --all-targets --all-features

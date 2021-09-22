@@ -28,7 +28,7 @@ impl FromStr for PhoneNumber {
         }
 
         Ok(PhoneNumber {
-            has_plus_prefix: s.starts_with("+"),
+            has_plus_prefix: s.starts_with('+'),
             parts,
         })
     }
@@ -50,7 +50,7 @@ impl Display for Obfuscated<PhoneNumber> {
 
         let number_of_visible = 4;
         let mut visible = 0;
-        let mut output = String::with_capacity(s.clone().len());
+        let mut output = String::with_capacity(s.len());
 
         for ch in s.chars().rev() {
             if ch.is_digit(10) {

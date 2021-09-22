@@ -1,8 +1,6 @@
 use std::fmt;
 use std::fmt::Display;
 
-use num;
-
 /// Wrapper to cover ordinal numbers
 ///
 /// This wrapper assumes that the inner value could be converted into ordinal number.
@@ -49,11 +47,11 @@ where
         //
         // I saw the similar implementation on the Internet some time ago, though it allows
         // the values of 0 and negatives
-        let suffix = if s.ends_with("1") && !s.ends_with("11") {
+        let suffix = if s.ends_with('1') && !s.ends_with("11") {
             "st"
-        } else if s.ends_with("2") && !s.ends_with("12") {
+        } else if s.ends_with('2') && !s.ends_with("12") {
             "nd"
-        } else if s.ends_with("3") && !s.ends_with("13") {
+        } else if s.ends_with('3') && !s.ends_with("13") {
             "rd"
         } else {
             "th"
